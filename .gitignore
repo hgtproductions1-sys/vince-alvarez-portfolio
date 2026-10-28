@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.vite/
+*.log
+.backups/
+.qa/
+.impeccable/
+.taste-skill/
+output/
+preview/
+videos/
+vince-portfolio-site.zip
+.env
+.env.*
+!.env.example

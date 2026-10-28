@@ -1,0 +1,9 @@
+/* One low-power procedural scene per concept; editorial styles place it. */
+.forme-hero,.tide-hero,.coffee-hero{position:relative;isolation:isolate;overflow:hidden}
+.concept-scene{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.6;overflow:hidden}
+.concept-scene canvas{display:block;width:100%;height:100%}
+.concept-motion-toggle{position:absolute;bottom:20px;left:var(--pad);z-index:3;min-height:44px;padding:11px 16px;background:#f2efe7;color:#34271f;border:1px solid currentColor;font:600 13px var(--body);cursor:pointer}
+.concept-motion-toggle:hover{text-decoration:underline;text-underline-offset:4px}
+.concept-motion-toggle:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.common-ground .coffee-hero-art>.concept-scene{inset:0;z-index:2;opacity:.7;mask-image:linear-gradient(#000 25%,transparent 65%)}
+@media(prefers-reduced-motion:reduce){[data-concept-story] *{scroll-behavior:auto!important}}

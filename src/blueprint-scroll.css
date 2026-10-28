@@ -1,0 +1,35 @@
+.blueprint-section{--blueprint-travel:100svh;background:var(--paper);border-bottom:1px solid var(--rule);position:relative;padding-block:clamp(40px,6vw,80px)}
+.blueprint-stage{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+.blueprint-copy{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;width:100%;max-width:1040px}
+.blueprint-copy h2{font-family:var(--display);font-size:clamp(38px,5.3vw,72px);line-height:1.02;letter-spacing:-.025em;margin:0}
+.blueprint-copy h2 span{color:var(--blue)}
+.blueprint-copy>p{font-size:clamp(14px,1.4vw,18px);line-height:1.65;margin:0 0 3px;max-width:300px}
+.blueprint-visual{position:relative;aspect-ratio:16/9;width:100%;max-width:1040px;margin:0;overflow:hidden;background:#f2efe7}
+.blueprint-visual img,.blueprint-visual canvas{display:block;width:100%;height:100%;object-fit:contain}
+.blueprint-visual canvas{position:absolute;inset:0;visibility:hidden}
+.blueprint-section.has-frame .blueprint-visual canvas{visibility:visible}
+.blueprint-hint{display:none;width:100%;max-width:1040px;justify-content:space-between;font-size:11px;text-transform:uppercase;letter-spacing:.13em;margin:0;color:var(--muted)}
+.blueprint-section.is-animated{padding:0;height:calc(100svh + var(--blueprint-travel))}
+.blueprint-section.is-animated .blueprint-stage{position:sticky;top:0;height:100svh;padding-block:28px;gap:clamp(12px,2vh,24px)}
+.blueprint-section.is-animated .blueprint-copy,.blueprint-section.is-animated .blueprint-hint,.blueprint-section.is-animated .blueprint-visual{max-width:min(1040px,calc((100svh - 250px)*16/9))}
+.blueprint-section.is-animated .blueprint-hint{display:flex}
+@media(max-width:760px){
+  .blueprint-section{--blueprint-travel:70svh}
+  .blueprint-copy{align-items:flex-start;flex-direction:column;gap:14px}
+  .blueprint-copy>p br{display:none}
+  .blueprint-copy>p{max-width:290px}
+  .blueprint-section.is-animated .blueprint-stage{gap:24px}
+  .blueprint-section.is-animated .blueprint-copy,.blueprint-section.is-animated .blueprint-hint,.blueprint-section.is-animated .blueprint-visual{max-width:min(1040px,calc((100svh - 280px)*16/9))}
+}
+@media(max-height:480px){
+  .blueprint-section.is-animated .blueprint-copy{flex-direction:row;align-items:flex-end}
+  .blueprint-section.is-animated .blueprint-copy h2{font-size:28px}
+  .blueprint-section.is-animated .blueprint-copy>p{font-size:12px;max-width:230px}
+  .blueprint-section.is-animated .blueprint-stage{gap:10px;padding-block:12px}
+  .blueprint-section.is-animated .blueprint-copy,.blueprint-section.is-animated .blueprint-hint,.blueprint-section.is-animated .blueprint-visual{max-width:min(1040px,calc((100svh - 130px)*16/9))}
+}
+@media(prefers-reduced-motion:reduce){
+  .blueprint-section.is-animated{height:auto;padding-block:40px}
+  .blueprint-section.is-animated .blueprint-stage{position:static;height:auto}
+  .blueprint-section.has-frame .blueprint-visual canvas,.blueprint-section.is-animated .blueprint-hint{display:none}
+}

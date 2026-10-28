@@ -1,0 +1,217 @@
+/* Slow Tide: a coastal photograph becomes an unhurried arrival. */
+body.slow-tide{
+  --pad:clamp(20px,4vw,72px);
+  --tide-ocean:#123b42;
+  --tide-deep:#0b2b31;
+  --tide-paper:#f2f7f5;
+  --tide-ink:var(--tide-ocean);
+  --tide-field:#c8ddd5;
+  --tide-hover:#b3cfc5;
+  --tide-white:var(--tide-paper);
+  --sea:var(--tide-ink);
+  --sand:var(--tide-field);
+  --paper:var(--tide-paper);
+  --ink:var(--tide-ink);
+  background:var(--tide-ocean);
+  color:var(--tide-white);
+  color-scheme:dark;
+}
+.slow-tide ::selection{background:var(--tide-field);color:var(--tide-ink)}
+.slow-tide .tide-rooms ::selection,.slow-tide .tide-stay form ::selection{background:var(--tide-ocean);color:var(--tide-white)}
+.slow-tide h1,.slow-tide h2,.slow-tide h3{font-family:var(--serif);font-weight:400;letter-spacing:-.045em}
+.slow-tide h2{font-size:clamp(52px,7.2vw,112px);line-height:.95}
+.slow-tide h3{font-size:clamp(36px,4.8vw,72px);line-height:1}
+.slow-tide p{font-size:17px;line-height:1.65}
+.slow-tide main,.slow-tide section,.slow-tide article,.slow-tide figure{min-width:0}
+.slow-tide img{min-width:0;max-width:100%}
+.slow-tide .tide-chapter-image,.slow-tide .tide-chapter-copy,.slow-tide .room-details{min-width:0}
+.slow-tide .concept-banner{border:0;font-size:13px;line-height:1.4;min-height:44px;padding-block:9px;background:var(--tide-deep);color:var(--tide-white)}
+.slow-tide .concept-header{padding-block:26px;gap:28px;min-height:100px;background:var(--tide-ocean);color:var(--tide-white)}
+.slow-tide .tide-logo{font-size:48px;line-height:.9;letter-spacing:-2px}
+.slow-tide .concept-header nav{gap:clamp(20px,2.5vw,42px);font-size:14px;font-weight:600}
+.slow-tide .concept-header .nav-accent{padding:13px 20px;border:0;background:var(--tide-field);color:var(--tide-ink)}
+.slow-tide .concept-header nav a:hover{text-decoration-thickness:2px;text-underline-offset:7px}
+.slow-tide .tide-hero{display:block;position:relative;min-height:0;max-height:none;height:auto;background:var(--tide-ocean);color:var(--tide-white);overflow:hidden}
+.slow-tide .tide-hero-media{position:relative;height:clamp(340px,51svh,660px);overflow:hidden;background:var(--tide-ink)}
+.slow-tide .tide-hero-media>img{height:100%;object-fit:cover;object-position:center 58%}
+.slow-tide .tide-hero-media>.concept-scene{inset:0;z-index:1;opacity:.68;mask-image:none}
+.slow-tide .tide-hero-media>.concept-scene:before{display:none}
+.slow-tide .tide-hero-media>.concept-motion-toggle{left:auto;right:var(--pad);bottom:20px;min-height:44px;padding:11px 16px;font:600 13px var(--body);color:var(--tide-white);background:var(--tide-ink);border:0;backdrop-filter:none}
+.slow-tide .tide-hero h1{font-size:clamp(112px,22.2vw,380px);line-height:.83;letter-spacing:-.06em;white-space:nowrap;padding:22px var(--pad) 6px;text-shadow:none;transform-origin:left center}
+.slow-tide .tide-hero-bottom{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:28px var(--pad) 38px}
+.slow-tide .tide-hero-bottom>p{font-size:18px;line-height:1.45}
+.slow-tide .tide-action{display:inline-flex;justify-content:space-between;align-items:center;gap:40px;min-height:54px;padding:14px 22px;font-size:15px;font-weight:650;color:var(--tide-ink);background:var(--tide-field);transition:transform 180ms cubic-bezier(.2,.7,.2,1)}
+.slow-tide .tide-action span{font-size:24px;line-height:1}
+.slow-tide .tide-action:hover{transform:translateY(-3px)}
+.slow-tide .tide-action:active,.slow-tide .tide-button:active{transform:scale(.98)}
+.slow-tide .tide-link{gap:30px;min-height:48px;font-size:15px;font-weight:650;border:0;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:8px;padding:10px 0;transition:transform 180ms cubic-bezier(.2,.7,.2,1)}
+.slow-tide .tide-link:hover{transform:translateX(5px)}
+.slow-tide .tide-intro{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:end;text-align:left;padding-top:130px;padding-bottom:76px;background:var(--tide-ocean);color:var(--tide-white)}
+.slow-tide .tide-intro>p{max-width:44ch;margin:0;font-size:18px;line-height:1.65}
+.slow-tide .tide-passage{position:relative;padding:0 var(--pad);background:var(--tide-ocean);color:var(--tide-white)}
+.slow-tide .tide-passage-stage{display:grid;grid-template-columns:minmax(0,1fr);gap:90px}
+.slow-tide .tide-chapter{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:7vw;align-items:center;min-height:560px}
+.slow-tide .tide-chapter-image{height:clamp(420px,43vw,660px);overflow:hidden}
+.slow-tide .tide-chapter-image>img{width:100%;height:100%;object-fit:cover}
+.slow-tide .tide-chapter-copy{padding-right:2vw}
+.slow-tide .tide-chapter-copy>p{margin-top:24px;max-width:34ch}
+.slow-tide .tide-chapter-copy>.tide-link{margin-top:25px}
+.slow-tide .tide-passage.is-story-active .tide-passage-stage{position:sticky;top:44px;height:calc(100svh - 44px);min-height:560px;display:block}
+.slow-tide .tide-passage.is-story-active .tide-chapter{position:absolute;inset:0;min-height:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 420ms cubic-bezier(.2,.7,.2,1)}
+.slow-tide .tide-passage.is-story-active .tide-chapter-image{height:70svh;max-height:760px;min-height:420px}
+.slow-tide .tide-passage.is-story-active .tide-chapter-image>img{transform:scale(calc(1.045 - var(--story-progress,0)*.045))}
+.slow-tide .tide-passage.is-story-active[data-story-step="0"] .tide-chapter[data-story-step="0"],
+.slow-tide .tide-passage.is-story-active[data-story-step="1"] .tide-chapter[data-story-step="1"],
+.slow-tide .tide-passage.is-story-active[data-story-step="2"] .tide-chapter[data-story-step="2"]{opacity:1;visibility:visible;pointer-events:auto}
+.slow-tide .tide-rooms{padding-top:140px;padding-bottom:145px;background:var(--tide-field);color:var(--tide-ink);color-scheme:light}
+.slow-tide .tide-rooms .concept-section-head{align-items:end;margin-bottom:58px}
+.slow-tide .tide-rooms .concept-section-head>p{font-size:17px;line-height:1.6}
+.slow-tide .room-layout{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:7vw;align-items:start}
+.slow-tide .room-image>img{height:660px;object-fit:cover}
+.slow-tide .room-image>figcaption{padding-top:13px;font-size:14px}
+.slow-tide .room-selector{display:flex;flex-direction:column;gap:8px;border:0}
+.slow-tide .room-selector button{gap:20px;border:0;padding:18px 20px;background:var(--tide-paper);color:var(--tide-ink);min-height:68px;transition:background 180ms cubic-bezier(.2,.7,.2,1)}
+.slow-tide .room-selector button>span:first-child{font-family:var(--serif);font-size:32px;letter-spacing:-1px;margin:0;text-align:left}
+.slow-tide .room-selector button>span:last-child{font-family:var(--body);font-size:24px;line-height:1;margin:0}
+.slow-tide .room-selector button[aria-pressed=true]{background:var(--tide-ink);color:var(--tide-paper);padding-inline:20px}
+.slow-tide .room-selector button:hover:not([aria-pressed=true]){background:var(--tide-hover)}
+.slow-tide .room-description{min-height:285px;padding-top:35px}
+.slow-tide .room-description>#room-specs{font-size:14px;line-height:1.5;margin:0 0 20px}
+.slow-tide .room-description h3{font-size:clamp(34px,3.2vw,48px);line-height:1.06;letter-spacing:-.035em}
+.slow-tide .room-description>p:last-child{font-size:16px;margin-top:20px;line-height:1.65}
+.slow-tide .tide-room-fallback{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:50px}
+.slow-tide .tide-room-fallback h3{font-size:36px}
+.slow-tide .tide-room-fallback p{margin-top:18px}
+.slow-tide .tide-room-fallback>p{grid-column:1/-1}
+.slow-tide .tide-moments{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:3vw;row-gap:50px;padding:110px var(--pad) 125px;background:var(--tide-deep);color:var(--tide-white)}
+.slow-tide .tide-moments-heading{grid-column:1/-1;display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:15px}
+.slow-tide .tide-moments-heading>p{font-size:17px}
+.slow-tide .tide-moment-large{grid-column:1/9}
+.slow-tide .tide-moment-large>img{height:580px;width:100%;object-fit:cover}
+.slow-tide .tide-moment-small{grid-column:10/13;margin-top:190px}
+.slow-tide .tide-moment-small>img{height:330px;width:100%;object-fit:cover}
+.slow-tide .tide-moments figcaption{font-size:14px;line-height:1.5;margin-top:16px}
+.slow-tide .tide-moments-close{grid-column:1/9;font-family:var(--serif);font-size:36px;line-height:1.15;letter-spacing:-.03em}
+.slow-tide .tide-stay{padding-top:140px;padding-bottom:145px;gap:8vw;align-items:start;background:var(--tide-ocean);color:var(--tide-white)}
+.slow-tide .tide-stay>div>p{max-width:34ch;margin-top:30px;font-size:17px;line-height:1.65}
+.slow-tide .tide-stay>div>.tide-stay-notice{font-size:14px;margin-top:24px;max-width:36ch}
+.slow-tide .tide-stay form{border:0;background:var(--tide-paper);color:var(--tide-ink);color-scheme:light;padding:35px}
+.slow-tide .tide-stay label{font-size:14px;margin-bottom:11px;font-weight:650}
+.slow-tide .tide-stay input,.slow-tide .tide-stay select{font-size:16px;background:var(--tide-paper);color:var(--tide-ink);color-scheme:light;border:1px solid var(--tide-ink);padding:12px;min-height:50px;margin-bottom:26px}
+.slow-tide .tide-button{font-size:15px;min-height:56px;background:var(--tide-field);color:var(--tide-ink);border:0;padding:16px 20px}
+.slow-tide #stay-result{font-size:15px;margin-top:20px;line-height:1.6}
+.slow-tide #stay-result:empty{margin:0}
+.slow-tide .concept-footer{display:block;padding:45px var(--pad) 36px;background:var(--tide-deep);color:var(--tide-white);border:0}
+.slow-tide .tide-footer-name{display:block;width:max-content;font-family:var(--serif);font-size:clamp(100px,21vw,340px);line-height:.95;letter-spacing:-.06em}
+.slow-tide .tide-footer-bottom{display:flex;gap:40px;justify-content:space-between;align-items:end;margin-top:38px}
+.slow-tide .tide-footer-bottom p{font-size:13px;line-height:1.65;max-width:32ch}
+.slow-tide .tide-footer-bottom>a{font-size:15px;text-decoration:underline;text-underline-offset:7px;white-space:nowrap;padding-block:10px}
+.slow-tide :focus-visible{outline:3px solid var(--tide-field);outline-offset:5px}
+.slow-tide .tide-rooms :focus-visible,.slow-tide .tide-stay form :focus-visible{outline-color:var(--tide-ocean)}
+@media(max-width:1050px){
+  .slow-tide .concept-header nav{gap:20px;font-size:13px}
+  .slow-tide .concept-header .nav-accent{padding-inline:14px}
+  .slow-tide .tide-intro{gap:6vw;padding-top:100px}
+  .slow-tide .tide-chapter,.slow-tide .room-layout{gap:5vw;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
+  .slow-tide .tide-chapter-copy{padding-right:0}
+  .slow-tide .room-image>img{height:600px}
+  .slow-tide .room-selector button{padding-inline:15px}
+  .slow-tide .room-selector button>span:first-child{font-size:27px}
+  .slow-tide .room-selector button[aria-pressed=true]{padding-inline:15px}
+  .slow-tide .tide-moment-large>img{height:470px}
+  .slow-tide .tide-moment-small{grid-column:9/13;margin-top:170px}
+  .slow-tide .tide-moment-small>img{height:280px}
+  .slow-tide .tide-stay form{padding:25px}
+  .slow-tide .tide-footer-bottom{gap:28px;flex-wrap:wrap}
+}
+@media(max-width:760px){
+  .slow-tide .concept-banner{font-size:12px;padding-block:10px;min-height:44px;gap:15px}
+  .slow-tide .concept-header{padding-block:22px;min-height:88px}
+  .slow-tide .tide-logo{font-size:42px}
+  .slow-tide .concept-menu{font-size:14px;padding:10px 14px;min-height:44px;border:0;background:var(--tide-field);color:var(--tide-ink)}
+  .slow-tide .concept-header nav{font-size:16px;background:var(--tide-ocean);color:var(--tide-white);border:0;padding-bottom:25px}
+  .slow-tide .concept-header .nav-accent{padding:15px}
+  .slow-tide .tide-hero-media{height:49svh;min-height:305px;max-height:540px}
+  .slow-tide .tide-hero-media>img{object-position:43% center}
+  .slow-tide .tide-hero h1{font-size:23.3vw;line-height:.86;padding-top:22px;padding-bottom:0;letter-spacing:-.06em}
+  .slow-tide .tide-hero-bottom{display:block;padding-top:24px;padding-bottom:30px}
+  .slow-tide .tide-hero-bottom>p{font-size:16px;line-height:1.55}
+  .slow-tide .tide-hero-bottom>p br{display:none}
+  .slow-tide .tide-action{font-size:14px;padding:12px 15px;gap:20px;min-height:50px;margin-top:20px}
+  .slow-tide .tide-hero-media>.concept-motion-toggle{right:20px;bottom:18px;font-size:12px}
+  .slow-tide .tide-intro{grid-template-columns:1fr;gap:28px;padding-top:85px;padding-bottom:42px}
+  .slow-tide .tide-intro>p{font-size:17px;max-width:42ch}
+  .slow-tide .tide-passage-stage{gap:65px}
+  .slow-tide .tide-chapter{grid-template-columns:minmax(0,1fr);gap:25px;min-height:0}
+  .slow-tide .tide-chapter-image{height:65vw;min-height:260px;max-height:500px}
+  .slow-tide .tide-chapter-copy{padding-bottom:10px}
+  .slow-tide .tide-chapter-copy h3{font-size:clamp(43px,10vw,65px)}
+  .slow-tide .tide-chapter-copy h3 br{display:none}
+  .slow-tide .tide-chapter-copy>p{font-size:16px;margin-top:16px;max-width:43ch}
+  .slow-tide .tide-chapter-copy>.tide-link{margin-top:14px}
+  .slow-tide .tide-passage.is-story-active .tide-passage-stage{top:44px;min-height:0;height:calc(100svh - 44px)}
+  .slow-tide .tide-passage.is-story-active .tide-chapter{display:flex;flex-direction:column;justify-content:center;gap:23px}
+  .slow-tide .tide-passage.is-story-active .tide-chapter-image{height:38svh;min-height:210px;max-height:430px;width:100%}
+  .slow-tide .tide-passage.is-story-active .tide-chapter-copy{width:100%;padding-bottom:15px}
+  .slow-tide .tide-rooms{padding-top:90px;padding-bottom:95px}
+  .slow-tide .tide-rooms .concept-section-head{margin-bottom:35px}
+  .slow-tide .tide-rooms .concept-section-head>p{font-size:16px;margin-top:24px}
+  .slow-tide .room-layout{grid-template-columns:minmax(0,1fr);gap:30px}
+  .slow-tide .room-image>img{height:105vw;min-height:320px;max-height:600px}
+  .slow-tide .room-image>figcaption{font-size:13px}
+  .slow-tide .room-selector button{padding:16px 18px;min-height:65px}
+  .slow-tide .room-selector button[aria-pressed=true]{padding-inline:18px}
+  .slow-tide .room-selector button>span:first-child{font-size:30px}
+  .slow-tide .room-description{min-height:0;padding-top:32px;padding-bottom:17px}
+  .slow-tide .room-description h3{font-size:36px;max-width:20ch}
+  .slow-tide .room-description>p:last-child{font-size:16px;max-width:45ch}
+  .slow-tide .tide-room-fallback{grid-template-columns:1fr;gap:30px}
+  .slow-tide .tide-moments{padding-top:80px;padding-bottom:85px;row-gap:35px;column-gap:20px}
+  .slow-tide .tide-moments-heading{display:block;margin-bottom:0}
+  .slow-tide .tide-moments-heading>p{font-size:16px;margin-top:24px}
+  .slow-tide .tide-moment-large{grid-column:1/12}
+  .slow-tide .tide-moment-large>img{height:90vw;max-height:540px;min-height:0}
+  .slow-tide .tide-moment-small{grid-column:5/13;margin-top:0}
+  .slow-tide .tide-moment-small>img{height:62vw;max-height:380px}
+  .slow-tide .tide-moments figcaption{font-size:13px;margin-top:13px}
+  .slow-tide .tide-moments-close{grid-column:1/-1;font-size:24px;margin-top:8px}
+  .slow-tide .tide-stay{grid-template-columns:1fr;gap:36px;padding-top:90px;padding-bottom:90px}
+  .slow-tide .tide-stay>div>p{max-width:42ch;font-size:17px;margin-top:25px}
+  .slow-tide .tide-stay>div>.tide-stay-notice{font-size:14px;margin-top:19px;max-width:40ch}
+  .slow-tide .tide-stay form{padding:24px}
+  .slow-tide .tide-stay input,.slow-tide .tide-stay select{font-size:16px;padding:11px 9px}
+  .slow-tide .stay-dates{gap:13px}
+  .slow-tide .concept-footer{padding-top:30px;padding-bottom:30px}
+  .slow-tide .tide-footer-name{font-size:23vw;line-height:.9}
+  .slow-tide .tide-footer-bottom{display:block;margin-top:30px}
+  .slow-tide .tide-footer-bottom p{font-size:13px;max-width:40ch}
+  .slow-tide .tide-footer-bottom .tide-photo-notice{margin-top:20px}
+  .slow-tide .tide-footer-bottom>a{display:inline-block;font-size:14px;margin-top:22px}
+}
+@media(max-width:380px){
+  .slow-tide .concept-banner{font-size:11px}
+  .slow-tide .tide-hero-media{min-height:290px;height:45svh}
+  .slow-tide .tide-hero-bottom{display:block}
+  .slow-tide .tide-hero-bottom>p br{display:none}
+  .slow-tide .tide-action{margin-top:20px}
+  .slow-tide .tide-passage.is-story-active .tide-chapter-image{min-height:190px;height:32svh}
+  .slow-tide .tide-chapter-copy h3{font-size:40px}
+  .slow-tide .tide-chapter-copy>p{font-size:16px;line-height:1.55}
+  .slow-tide .tide-chapter-copy>.tide-link{font-size:14px;margin-top:8px}
+  .slow-tide .room-selector button>span:first-child{font-size:28px}
+  .slow-tide .tide-stay form{padding:20px}
+  .slow-tide .stay-dates{grid-template-columns:1fr;gap:0}
+  .slow-tide .tide-stay select{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+  .slow-tide .tide-passage.is-story-active .tide-chapter-image>img,.slow-tide .tide-action:hover,.slow-tide .tide-link:hover{transform:none}
+}
+@supports(animation-timeline:view()){
+  @media(prefers-reduced-motion:no-preference){
+    html[data-motion-paused="false"] .slow-tide .tide-hero h1{animation:tide-name-settle 1s linear both;animation-timeline:view();animation-range:entry 0% exit 100%}
+    @keyframes tide-name-settle{from{transform:scale(1.025)}to{transform:scale(.98)}}
+  }
+}
+/* The concept can be referenced without presenting a real booking service. */
+.tide-concept-inquiry{display:inline-flex;align-items:center;min-height:44px;margin:24px 0;padding:12px 18px;border:1px solid #c8ddd5;background:#c8ddd5;color:#123b42;font:600 14px/1.4 var(--body);text-decoration:none}
+.tide-concept-inquiry:focus-visible{outline:3px solid #f2f7f5;outline-offset:4px}

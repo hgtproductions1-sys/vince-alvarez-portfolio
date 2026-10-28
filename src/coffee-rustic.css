@@ -1,0 +1,64 @@
+/* Common Ground — warm wood, handmade ceramics and parchment. Scoped to this concept. */
+.common-ground{--coffee:#34271f;--paper:#f1e8d8;--ink:#34271f;--olive:#59634a;--copper:#925f40;--pistachio:#e3dcc8;--line:#b9ab95;background:var(--paper);color:var(--coffee)}
+.common-ground .concept-header{border-bottom:1px solid var(--line);padding-block:23px}
+.common-ground .coffee-logo{font-family:var(--serif);font-size:36px;line-height:.8;font-weight:500;letter-spacing:-1px;padding:0}
+.common-ground .coffee-logo>.coffee-logo-subtitle{position:static;display:block;font-family:var(--body);font-size:8px;letter-spacing:.23em;text-transform:uppercase;line-height:1;margin-top:12px;font-weight:600}
+.common-ground .concept-header nav{font-weight:600}
+.common-ground .nav-accent{background:transparent;color:var(--coffee);border:1px solid var(--line)!important;border-radius:0;padding-inline:20px}
+.common-ground .eyebrow{font-weight:550;font-size:12px;letter-spacing:.025em;text-transform:none;color:var(--copper)}
+.common-ground .coffee-hero{background:var(--paper);padding:55px var(--pad) 45px;grid-template-columns:1fr 1.1fr;gap:5vw;min-height:650px;overflow:visible}
+.common-ground .coffee-hero-copy{padding-block:22px}
+.common-ground .coffee-hero h1{font-family:var(--serif);font-size:clamp(66px,7.1vw,112px);font-weight:400;letter-spacing:-.055em;line-height:.95}
+.common-ground .coffee-hero-bottom{margin-top:35px}
+.common-ground .coffee-hero-bottom>p{font-size:14px;line-height:1.8;margin-bottom:27px;color:#5b4c3e}
+.common-ground .coffee-button{background:var(--olive);border:1px solid var(--olive);color:var(--paper);border-radius:0;padding:16px 22px;font-weight:650;min-height:52px;font-size:12px}
+.common-ground .coffee-hero-caption{border-top:1px solid var(--line);margin-top:50px;padding-top:18px;font-size:10px;letter-spacing:.025em;color:#6f604e}
+.common-ground .coffee-hero-art{padding:0;margin:0;position:relative;max-width:none;width:100%;min-width:0}
+.common-ground .coffee-hero-art>img{aspect-ratio:1.08;width:100%;height:auto;border-radius:0;border:0;transform:none;object-fit:cover;object-position:62% center}
+.common-ground .coffee-hero-art>figcaption{display:flex;justify-content:space-between;gap:20px;padding-top:15px;font-size:10px;color:#625141;line-height:1.5}
+.common-ground .coffee-strip{background:var(--olive);color:var(--paper);font-family:var(--serif);font-size:22px;font-weight:400;padding:21px var(--pad);letter-spacing:0;justify-content:space-between;gap:24px;white-space:normal;text-align:center}
+.common-ground .coffee-strip>span:nth-child(even){font-family:var(--body);font-size:15px;opacity:.6}
+.common-ground h2{font-family:var(--serif);font-weight:400;letter-spacing:-.04em;font-size:clamp(45px,5vw,76px);line-height:1.02}
+.common-ground .coffee-menu-section{padding-top:90px}
+.common-ground .coffee-menu-section .concept-section-head{gap:40px;margin-bottom:45px}
+.common-ground .coffee-menu-section .concept-section-head>div:last-child{max-width:390px}
+.common-ground .coffee-menu-section .concept-section-head p:not(.eyebrow){color:#625141;font-size:12px;line-height:1.8}
+.common-ground .concept-filters{gap:8px}
+.common-ground .concept-filters button{border-radius:0;border-color:var(--line);font-weight:600;font-size:11px;padding:10px 14px}
+.common-ground .concept-filters button[aria-pressed=true]{background:var(--olive);border-color:var(--olive);color:var(--paper)}
+.common-ground .coffee-menu-items{border:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:45px 27px}
+.common-ground .coffee-menu-items article{display:block;padding:0 0 22px;border:0;border-bottom:1px solid var(--line);min-width:0}
+.menu-photo{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#ded2be}
+.menu-item-copy{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-top:20px}
+.common-ground .coffee-menu-items h3{font-family:var(--serif);font-size:29px;font-weight:500;letter-spacing:-.6px;line-height:1.05}
+.common-ground .coffee-menu-items p{font-size:11px;line-height:1.8;color:#625141;margin-top:11px;max-width:32ch}
+.common-ground .menu-price{font-size:12px;font-weight:650;white-space:nowrap;line-height:1.6;padding-top:5px}
+.common-ground .menu-note{display:table;font-size:8px;font-family:var(--body);font-weight:650;letter-spacing:.04em;color:var(--olive);background:transparent;border:0;border-radius:0;border-bottom:1px solid #59634a66;margin:10px 0 0;padding:0 0 3px;line-height:1.4}
+.common-ground .sample-menu-note{font-size:10px;color:#625141;opacity:1;margin-top:28px}
+.common-ground .coffee-story{background:var(--coffee);color:var(--paper);grid-template-columns:1fr 1fr}
+.common-ground .coffee-story-image{min-height:580px}
+.common-ground .coffee-story-image>span{background:var(--paper);color:var(--coffee);font-size:32px;font-weight:400;transform:none;padding:10px 20px;bottom:30px;left:30px}
+.common-ground .coffee-story-copy{padding:75px var(--pad);display:flex;flex-direction:column;justify-content:center}
+.common-ground .coffee-story-copy .eyebrow{color:#d5b79c}
+.common-ground .coffee-story h2{font-size:clamp(45px,4.6vw,70px);line-height:1.02}
+.common-ground .coffee-story p:not(.eyebrow){color:#d8cbbb;line-height:1.9;font-size:13px}
+.common-ground .coffee-story .coffee-button{background:var(--paper);border-color:var(--paper);color:var(--coffee);align-self:flex-start;margin-top:30px}
+.common-ground .coffee-ritual{gap:8vw}
+.common-ground .coffee-ritual>div>p:last-child{font-size:13px;color:#625141}
+.common-ground .ritual-options{gap:8px}
+.common-ground .ritual-options button{border:1px solid var(--line);border-radius:0;font-weight:600;font-size:11px;padding:12px 14px}
+.common-ground .ritual-options button[aria-pressed=true]{background:var(--olive);border-color:var(--olive);color:var(--paper)}
+.common-ground .ritual-result{background:#e6ddcc;border:1px solid var(--line);box-shadow:none;min-height:210px;padding:30px;margin:25px 0 20px}
+.common-ground .ritual-result>span{font-size:10px;text-transform:none;letter-spacing:.02em;font-weight:500;color:var(--copper)}
+.common-ground .ritual-result h3{font-family:var(--serif);font-size:37px;font-weight:500;letter-spacing:-.8px;margin-top:12px;line-height:1.1}
+.common-ground .ritual-result p{font-size:13px;line-height:1.8;margin-top:15px;color:#625141}
+.common-ground .coffee-text-link{font-size:11px;font-weight:600}
+.common-ground .coffee-signoff{background:#ded5c1;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:50px;padding:65px var(--pad)}
+.common-ground .coffee-signoff h2{font-size:clamp(47px,5.4vw,82px)}
+.common-ground .coffee-signoff>div>p{font-size:13px;color:#625141;margin-bottom:20px}
+.common-ground .concept-footer{border-color:var(--line);background:var(--paper)}
+.common-ground .concept-footer p{color:#625141;line-height:1.8}
+.common-ground .concept-footer>a:last-child{font-weight:600}
+@media(max-width:1050px){.common-ground .coffee-hero{min-height:560px;gap:4vw;padding-top:40px}.common-ground .coffee-hero h1{font-size:7.8vw}.common-ground .coffee-hero-caption{margin-top:35px}.common-ground .coffee-hero-art>img{aspect-ratio:.92}.common-ground .coffee-strip{font-size:19px;gap:17px}.common-ground .coffee-menu-items{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 25px}.common-ground .coffee-menu-section .concept-section-head{align-items:flex-start}.common-ground .coffee-menu-section .concept-section-head>div:last-child{max-width:340px}.common-ground .coffee-story-copy{padding:50px 35px}.common-ground .coffee-story-image{min-height:570px}.common-ground .coffee-signoff{gap:30px}.common-ground .coffee-signoff .concept-button{font-size:11px}}
+@media(max-width:760px){.common-ground .concept-header{padding-block:22px;min-height:100px}.common-ground .coffee-logo{font-size:31px}.common-ground .coffee-logo>.coffee-logo-subtitle{font-size:7px;margin-top:10px}.common-ground .concept-header nav{background:var(--paper);color:var(--coffee)}.common-ground .coffee-hero{grid-template-columns:1fr;gap:30px;padding-top:35px;padding-bottom:30px;min-height:0}.common-ground .coffee-hero-copy{padding:0}.common-ground .coffee-hero h1{font-size:clamp(59px,12vw,90px);letter-spacing:-.04em}.common-ground .coffee-hero-bottom{margin-top:25px}.common-ground .coffee-hero-bottom>p{font-size:13px;margin-bottom:22px}.common-ground .coffee-hero-caption{margin-top:28px;padding-top:16px;font-size:9px}.common-ground .coffee-hero-art{width:100%;max-width:none;margin:0;padding:0}.common-ground .coffee-hero-art>img{aspect-ratio:1.18}.common-ground .coffee-hero-art>figcaption{font-size:9px;gap:12px;padding-top:12px}.common-ground .coffee-strip{font-size:18px;padding:20px var(--pad);flex-wrap:wrap;justify-content:center;gap:8px 16px}.common-ground .coffee-strip>span:nth-child(even){font-size:12px}.common-ground h2{font-size:clamp(44px,8vw,63px);letter-spacing:-.04em}.common-ground .coffee-menu-section{padding-top:65px}.common-ground .coffee-menu-section .concept-section-head{margin-bottom:30px}.common-ground .coffee-menu-section .concept-section-head>div:last-child{max-width:none}.common-ground .coffee-menu-section .concept-section-head p:not(.eyebrow){font-size:12px;margin-top:22px}.common-ground .coffee-menu-items{grid-template-columns:1fr;gap:32px}.common-ground .coffee-menu-items h3{font-size:30px}.common-ground .coffee-menu-items p{font-size:12px;max-width:40ch}.common-ground .menu-price{font-size:13px}.menu-item-copy{margin-top:18px}.common-ground .sample-menu-note{font-size:9px;line-height:1.7}.common-ground .coffee-story{grid-template-columns:1fr}.common-ground .coffee-story-image{min-height:0;height:390px}.common-ground .coffee-story-image>span{font-size:29px;bottom:23px;left:22px;padding:8px 16px}.common-ground .coffee-story-copy{padding:55px var(--pad)}.common-ground .coffee-story h2{font-size:clamp(46px,9vw,68px)}.common-ground .coffee-ritual{grid-template-columns:1fr;gap:30px}.common-ground .ritual-options{gap:7px}.common-ground .ritual-options button{font-size:10px;padding:11px 12px}.common-ground .ritual-result{padding:24px;min-height:210px}.common-ground .ritual-result h3{font-size:34px}.common-ground .coffee-signoff{display:block;padding:50px var(--pad)}.common-ground .coffee-signoff h2{font-size:clamp(45px,10vw,68px)}.common-ground .coffee-signoff>div{margin-top:28px}.common-ground .coffee-signoff>div>p{font-size:12px}.common-ground .concept-footer p{max-width:60%}}
+@media(max-width:380px){.common-ground .coffee-hero h1{font-size:54px}.common-ground .concept-footer p{max-width:100%}.common-ground .coffee-menu-items h3{font-size:28px}.common-ground .ritual-result h3{font-size:31px}.common-ground .coffee-strip{font-size:17px}}
